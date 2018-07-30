@@ -21,10 +21,10 @@
   var Descrip = $("#description").val();
 
   var articulo = {
-      Nombre: title,
-      Imagen: URL,
-      PrecioArt: price,
-      Dec: description,
+      nombre: title,
+      imagen: URL,
+      precio: price,
+      dec: description,
        }
 
        articulos_lista.push(articulo);
