@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Hello, world!</title>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+			<img src="img/logo.png" class="navbar-brand" alt="LBJ" href="index.html">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExample05">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item py-lg-3">
+						<a class="nav-link" target="_blanc" href="index.html">Portada</a>
+					</li>
+					<li class="nav-item dropdown py-lg-3">
+						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DEPORTES</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown05">
+							<a class="dropdown-item" href="#">Deporte 1</a>
+							<a class="dropdown-item" href="#formulario">Deporte 2</a>
+							<a class="dropdown-item" href="#layout">Deporte3 3</a>
+						</div>
+					</li>
+					<li class="nav-item py-lg-3">
+						<a class="nav-link" href="clima.html">Clima</a>
+					</li>
+					<li class="nav-item py-lg-3">
+						<a class="nav-link" href="nosotros.html">Nosotros</a>
+					</li>
+				</ul>
+				<div class="col-5 d-none d-lg-block"><a class="weatherwidget-io" href="https://forecast7.com/es/n34d90n56d16/montevideo/" data-label_1="MONTEVIDEO" data-label_2="CLIMA" data-mode="Current" data-theme="pure" >MONTEVIDEO CLIMA</a></div>
+				<ul class="navbar-nav justify-content-end">
+					<li class="nav-item py-lg-3">
+						<a class="nav-link" href="registro.html">Registrate!</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12 ">
+				 <h1>Nuevo Articulo</h1>
+      <form class="row" id="nuevaForm">  
+        <div class="col-12">
+          <div class="form-group">
+            <label for ="title"> Título </label>
+            <input class="form-control" name="titulo" type='text' id="title" placeholder="Ingrese el Titulo">         
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+  <label for="sel1">Select list:</label>
+  <select class="form-control" id="sel1" name="select">
+    <option>Basquetbol</option>
+    <option>Futbol</option>
+    <option>Rugby</option>
+    <option>Generales</option>
+  </select>
+</div>
+        </div>
+        <div class="col-12">
+         <div class="form-group">
+          <label for ="autor"> Autor</label>
+          <input class="form-control" name="autor" type='text' id="autor" placeholder="Autor">
+        </div> 
+      </div> 
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <label for ="URL">URL Imagen</label>
+            <input class="form-control" name="url" id="URL" type='text' placeholder="URL">      
+
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <label for ="price">Nivel</label>
+            <input class="form-control" type="number" name="precio" id="nivel" placeholder="Precio"> 
+          </div>
+        </div>
+
+        <div class="col-12">
+         <div class="form-group">
+          <label for ="description"> Contenido</label>
+          <textarea name="desc" class="form-control" id="description" type='text' placeholder="Descripción" rows="4"></textarea>
+        </div> 
+      </div> 
+        <div class="col-12 text-center">
+   <button type="submit" class="btn btn-primary">GUARDAR</button>
+ </div>
+    </form>
+			</div>
+		</div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+	</script>
+	<script src="js/nueva.js"></script>
+
+
+
+
+</body>
+</html>
