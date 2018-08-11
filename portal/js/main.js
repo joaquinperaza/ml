@@ -21,8 +21,8 @@ if (item.nivel==1 && one<5){
 }
 if (item.nivel==2 && two<4){
 
-var div=['<div class="col-3"><a href="noticia.html?id='+item.id+'"><div class="card bg-dark text-white">',
-'<img class="card-img imgN2"  src="'+item.img+'" alt="'+item.titulo+'">',
+var div=['<div class="col-3"><a href="noticia.html?id='+item.id+'"><div class="card  bg-dark text-white">',
+'<img class="card-img imgN2 item2 "  src="'+item.img+'" alt="'+item.titulo+'">',
 '<div class="card-img-overlay">',
 '<h5 class="card-title">'+item.titulo+'</h5><p class="card-text">'+item.titulo+'</p><p class="card-text">'+item.categoria+'</p></div></div><a></div>'].join('\n');
 $("#g1").append(div);
@@ -31,7 +31,7 @@ two++;
 } else if(item.nivel==2 && two<8){
 
 var div=['<div class="col-3"><a href="noticia.html?id='+item.id+'"><div class="card bg-dark text-white">',
-'<img class="card-img imgN2" src="'+item.img+'" alt="'+item.titulo+'">',
+'<img class="card-img imgN2 item2 " src="'+item.img+'" alt="'+item.titulo+'">',
 '<div class="card-img-overlay">',
 '<h5 class="card-title">'+item.titulo+'</h5><p class="card-text">'+item.titulo+'</p><p class="card-text">'+item.categoria+'</p></div></div><a></div>'].join('\n');
 $("#g2").append(div);

@@ -6,10 +6,15 @@ if (noticias == null){
 }
 function save(){
 		if($("#nuevaForm").valid()){
-	noticias.sort(function(x, y){
+			var id;
+			try{noticias.sort(function(x, y){
 		return y.id - x.id;
 	});
-	var id=noticias[0].id+1;
+	id=noticias[0].id+1;}
+	catch {
+		id=0;
+	}
+	
 	var noticia={
 		id: id,
 		fecha: Date.now(),
