@@ -31,6 +31,10 @@
   object-position: center; /* Center the image within the element */
   height: 250px;
 }
+.imgNoticia{
+  float: right;
+  margin: 20px;
+  width: 400px;
+}
 
-
-body { padding-top: 106px; }
+body { padding-top: 110px; }
