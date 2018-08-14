@@ -34,7 +34,7 @@
 				<div class="col-5 d-none d-lg-block"><a class="weatherwidget-io" href="https://forecast7.com/es/n34d90n56d16/montevideo/" data-label_1="MONTEVIDEO" data-label_2="CLIMA" data-mode="Current" data-theme="pure" >MONTEVIDEO CLIMA</a></div>
 				<ul class="navbar-nav justify-content-end">
 					<li class="nav-item py-lg-3">
-						<a class="nav-link" href="registro.html">Registrate!</a>
+						<a data-toggle="tooltip" data-placement="bottom" title="Para recibir las ultimas novedades del deporte!" class="nav-link" href="registro.html">Registrate!</a>
 					</li>
 				</ul>
 			</div>
@@ -71,11 +71,24 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script>
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
+		$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 	</script>
 	<script src="js/main.js"></script>
 
 
 
 
-</body>
+</body><br><br>
+<footer class="page-footer font-small text-white bg-dark">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="#"> LBJ.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 </html>
