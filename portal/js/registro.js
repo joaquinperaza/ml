@@ -32,7 +32,8 @@ return validate_ci(valor);
 $( document ).ready(function() {
 jQuery.validator.addMethod("doc", documentovalido, "Su documento es invalido!");
 $("#nuevaForm").validate({
-		rules: {
+    errorElement: "label",
+		rules: {  
 			documento:
 			{
 				doc: true

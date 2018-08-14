@@ -9,7 +9,19 @@
   height: 500px;
 }
 
-
+#documento-error ,#mail-error, #name-error, #tel-error, #customFile-error, #cont1-error, #cont2-error, #title-error, #nivel-error, #description-error, #autor-error, #URL-error, #select-error {
+  display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #dc3545;
+}
 
 .zum{
    transition: transform .2s;
@@ -18,7 +30,9 @@
 transform: scale(1.1);
 }
 
-
+.noticia2{
+  padding: 5px;
+}
 .ad {
   object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
